@@ -1,2 +1,2 @@
 # DamaBot
-Bot severo severo
+Bot severo ma solo se vero
