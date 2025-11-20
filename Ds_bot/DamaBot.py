@@ -38,7 +38,7 @@ async def on_message (message):
 
     await bot.process_commands (message)
 
-@bot.event          
+@bot.event          #quando messaggio modificato
 async def on_message_edit (before, after):
     with open ('logMes.txt', 'a') as f:
         f.write (f"[{before.content}] -> modificato: {after.content} da {after.author}\n")
@@ -137,5 +137,6 @@ async def box (ctx):
         url = random.choice (listaLinkPhishing)
     )
     await ctx.send (embed = box)
+
 
 
